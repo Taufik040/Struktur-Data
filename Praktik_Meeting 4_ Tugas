@@ -1,0 +1,72 @@
+#Experiment penggunaan List dalam kodingan :
+nama_siswa1 = ["Taufik", "Andi", "Budi"]
+nama_siswa2 = nama_siswa1
+print("Sebelum di Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa2 = ["Dimas", "Arya", "Dedi"]
+print("Setelah Melakukan Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa1[2] = "Irham"
+print("Setelah Melakukan Update ke-2:")
+print("Berikut Ini Merupakan Siswa Kelompok 1 :", nama_siswa1)
+print("Berikut Ini Merupakan Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+# karena list termasuk kedalam mutable sehingga data nya dapat diubah
+-----------------------------------------------------------------
+#Experiment penggunaan Tuple dalam kodingan :
+nama_siswa1 = ("Taufik", "Andi", "Budi")
+nama_siswa2 = nama_siswa1
+print("Sebelum di Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa2 = ("Dimas", "Arya", "Dedi")
+print("Setelah Melakukan Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa1(2) = "Irham"
+print("Setelah Melakukan Update ke-2:")
+print("Berikut Ini Merupakan Siswa Kelompok 1 :", nama_siswa1)
+print("Berikut Ini Merupakan Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+# karena tuple adalah immutable sehingga data nya tidak dapat diubah
+-----------------------------------------------------------------
+#Experiment penggunaan Set dalam kodingan :
+nama_siswa1 = {"Taufik", "Andi", "Budi"}
+nama_siswa2 = nama_siswa1
+print("Sebelum di Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa2 = {"Dimas", "Arya", "Dedi"}
+print("Setelah Melakukan Update :")
+print("Nama Siswa Kelompok 1 :", nama_siswa1)
+print("Nama Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+-----------------------------------------------------------------
+nama_siswa2.add("Irham")
+print("Setelah Melakukan Update ke-2:")
+print("Berikut Ini Merupakan Siswa Kelompok 1 :", nama_siswa1)
+print("Berikut Ini Merupakan Siswa Kelompok 2 :", nama_siswa2)
+print("Data Kelompok 1 di simpan pada memori :", id(nama_siswa1))
+print("Data Kelompok 2 di simpan pada memori :", id(nama_siswa2))
+# karena Set adalah Mutable sehingga data di dalam nya dpat di ubah
+-----------------------------------------------------------------
